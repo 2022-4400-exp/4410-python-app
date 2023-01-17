@@ -20,8 +20,7 @@ def index_post():
     time = datetime.now()
 
     with open('/var/python-app/data.txt','a') as f:
-    #    f.write(f"{time} {name}「{msg}」\n")
-        f.write(f"{time} ひろゆき「論破されました」\n")
+        f.write(f"{time} :{name}「{msg}」\n")
 
     return redirect("/")
 
