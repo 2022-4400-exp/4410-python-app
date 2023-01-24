@@ -25,4 +25,4 @@ jobs:
 
       - name: Build and Publish
         run: |
-          docker buildx build --platform linux/arm/v7,linux/amd64 .-t ghcr.io/2022-4400-exp/4410-python-app:${{ github.sha }} --push
+          docker buildx build --platform linux/arm/v7,linux/amd64 .-t ghcr.io/2022-4410-exp/4410-python-app:${{ github.sha }} --push
