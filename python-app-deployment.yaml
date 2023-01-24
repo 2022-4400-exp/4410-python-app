@@ -17,3 +17,10 @@ spec:
       containers:
       - image: accountcountcounter/python-app
         name: python-app
+        volumeMounts:
+        - mountPath: /var/lib/python
+          name: python-app-data-mount
+      volumes:
+      - name: python-app-data-mount
+        persistentVolumeClaim:
+          claimName: python-app-data
